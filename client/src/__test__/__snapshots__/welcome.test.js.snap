@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome page renders correctly 1`] = `
+<div
+  className="welcomeWrapper"
+>
+  <div
+    className="welcomeContainer"
+  >
+    <div
+      className="welcomeHeader"
+    >
+      <h1>
+        Welcome
+      </h1>
+      <br />
+      <br />
+    </div>
+    <div
+      className="welcomeSubtext"
+    >
+      <p>
+        Please login or register to view the dashboard. 
+        <br />
+      </p>
+    </div>
+    <row>
+      <a
+        aria-describedby={null}
+        className=""
+        href="/login"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Go to the login page"
+      >
+        <button
+          className="welcomebtn orangeButton"
+        >
+          Login
+        </button>
+      </a>
+      <a
+        aria-describedby={null}
+        className=""
+        href="/sign-up"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        title="Go to the sign-up page"
+      >
+        <button
+          className="welcomebtn orangeButton"
+        >
+          Register
+        </button>
+      </a>
+    </row>
+  </div>
+</div>
+`;
