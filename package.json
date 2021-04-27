@@ -1,0 +1,45 @@
+{
+  "name": "mern_conf_centre_app",
+  "version": "1.0.0",
+  "description": "MERN stack app with passport authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha --timeout 20000",
+    "start": "node server.js",
+    "client-install": "npm install --prefix client",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "concurrently": "6.0.0",
+    "cookie-session": "1.4.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "helmet": "4.4.1",
+    "mongoose": "5.11.17",
+    "morgan": "^1.10.0",
+    "npm": "7.6.2",
+    "passport": "0.4.1",
+    "passport-google-oauth20": "2.0.0",
+    "passport-local": "1.0.0",
+    "passport-spotify": "2.0.0",
+    "path": "0.12.7",
+    "uuid": "^8.3.2"
+  },
+  "engines": {
+    "node": "14.15.2",
+    "npm": "7.7.4"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.2",
+    "nodemon": "2.0.7",
+    "supertest": "^6.1.3"
+  }
+}
